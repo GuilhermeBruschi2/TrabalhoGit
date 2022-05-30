@@ -1,4 +1,4 @@
-# trabalho1
+# Trabalho 1
 
 Realize a simulação de um projeto de desenvolvimento colaborativo utilizando o Git. Para isso,
 se organizem em um grupo de 3 ou quatro pessoas para realizar as seguintes tarefas:
