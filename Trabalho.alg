@@ -1,4 +1,4 @@
-algoritmo "Trabalho 1"
+algoritmo "Trabalho 1 - 2º BImestre Ricrado Petri"
 var
 res, n1, n2: inteiro
 //Função soma: Guilherme Bruschi
