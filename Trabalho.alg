@@ -1,10 +1,10 @@
 algoritmo "semnome"
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 30/05/2022
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
-
+merda: caractere
 inicio
-// Seção de Comandos 
+// SeÃ§Ã£o de Comandos
 fimalgoritmo
