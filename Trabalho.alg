@@ -1,12 +1,6 @@
 algoritmo "Trabalho 1"
 var
-
-n1, n2: inteiro
-procedimento menu
-var
-res: inteiro
-inicio
-
+res, n1, n2: inteiro
 //Função soma: Guilherme Bruschi
 funcao f_somaInteiros(n1, n2: inteiro): inteiro
 
@@ -17,12 +11,30 @@ soma <- n1 + n2
 retorne soma
 fimfuncao
 //Função divisão: Jordan Bitencourt
-funcao f_divisaoInteiros (n1,n2: inteiro) : inteiro
+funcao f_divisaoInteiros (n1,n2: real) : real
 var
-divi: inteiro
+divi: real
+inicio
 divi <- n1 / n2
 retorne divi
 fimfuncao
+//Função multiplicação: Guilherme Bruschi
+funcao f_multiplicacaoInteiros (n1,n2: inteiro) : inteiro
+var
+multi: inteiro
+inicio
+multi <- n1*n2
+retorne multi
+fimfuncao
+//Função subtração: Guilherme Bruschi
+funcao f_subtracaoInteiros (n1,n2: inteiro) : inteiro
+var
+sub: inteiro
+inicio
+sub <- n1-n2
+retorne sub
+fimfuncao
+
 inicio
 // Seção de Comandos
 escreval ("Informe o número 1: ")
@@ -30,11 +42,13 @@ leia(n1)
 escreval ("Informe o número 2: ")
 leia(n2)
 limpatela
+enquanto (res <> 9) faca
 escreval ("Qual operação você deseja fazer?")
 escreval ("1 - Soma")
 escreval ("2 - Subtração")
 escreval ("3 - Multiplicação")
 escreval ("4 - Divisão")
+escreval ("9 - Sair")
 leia (res)
 escolha (res)
 caso 1
@@ -46,7 +60,5 @@ escreval ("A multiplicação dos números digitados é: ", f_multiplicacaoInteir
 caso 4
 escreval ("A divisão dos númeors digitados é: ", f_divisaoInteiros(n1,n2))
 fimescolha
-fimprocedimento
-inicio
-menu
+fimenquanto
 fimalgoritmo
