@@ -26,7 +26,7 @@ inicio
 multi <- n1*n2
 retorne multi
 fimfuncao
-//Função subtração: Guilherme Bruschi
+//Função subtração: Gustavo Borges Garcia
 funcao f_subtracaoInteiros (n1,n2: inteiro) : inteiro
 var
 sub: inteiro
