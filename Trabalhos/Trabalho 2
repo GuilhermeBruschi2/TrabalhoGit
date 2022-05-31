@@ -1,1 +1,63 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Edson Shinki Kaneshima
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 30/05/2022
+Var
+   // Seção de Declarações das variáveis
+   par, impar, n1, i, opcao: inteiro
+   numero : vetor [1..10] de inteiro
+   pares : vetor [1..10] de inteiro
+   impares : vetor [1..10] de inteiro
+   
+procedimento primos
 
+
+
+
+procedimento paresimpares
+inicio
+   impar <- 0
+   par <- 0
+      para i de 1 ate 10 faca
+         se (numero[i] mod 2 <> 0) entao
+            impar <- impar + 1
+            impares[impar] <- numero[i]
+         senao
+            par <- par + 1
+            pares[par] <- numero[i]
+         fimse
+      fimpara
+      escreval ("Tem ",par," números pares, sendo:")
+      para i de 1 ate par faca
+         escreval (pares[i])
+      fimpara
+      escreval ("Tem ",impar," números ímpares, sendo:")
+      para i de 1 ate impar faca
+         escreval (impares[i])
+      fimpara
+fimprocedimento
+Inicio
+   numero[1] <- 3
+   numero[2] <- 4
+   numero[3] <- 7
+   numero[4] <- 11
+   numero[5] <- 14
+   numero[6] <- 99
+   numero[7] <- 10
+   numero[8] <- 21
+   numero[9] <- 19
+   numero[10] <- 57
+   escreval ("------------MENU------------")
+   escreval ("Qual cálculo você deseja?")
+   escreval ("1 - Pares e Ímpares")
+   escreval ("2 - Primos")
+   escreval ("----------------------------")
+   leia (n1)
+   escolha (n1)
+   caso 1
+      paresimpares
+   caso 2
+   primos
+Fimalgoritmo
